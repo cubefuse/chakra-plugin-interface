@@ -22,6 +22,10 @@
 
 ## Getting Started
 
+This is the standard interface for a Chakra Plugin. All Chakra plugins must implement this.
+
+Please note that this package is only applicable to Chakra plugin developers.
+
 ### npm package
 
 This is the recommended method for using this package.
@@ -36,7 +40,7 @@ If you are using `yarn` (recommended), use this instead.
 yarn add @chakrajs/plugin-interface
 ```
 
-Please read the [Documentation](https://cubefuse.github.io/chakra-docs) and the [API Reference](https://cubefuse.github.io/chakra-plugin-interface) to start building Chakra Apps.
+Please read the [Documentation](https://cubefuse.github.io/chakra-docs/#/essentials/creating-plugins) and the [API Reference](https://cubefuse.github.io/chakra-plugin-interface) to start building Chakra Apps.
 
 ## Development Setup
 
