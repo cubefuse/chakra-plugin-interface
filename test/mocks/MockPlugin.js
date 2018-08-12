@@ -1,5 +1,5 @@
 'use strict'
-const Plugin = require('../../dist/plugin-interface')
+const Plugin = require('../../dist/plugin-interface.min')
 const mockSchema = require('./mockSchema.json')
 
 class MockPlugin extends Plugin {

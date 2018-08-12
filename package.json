@@ -1,7 +1,7 @@
 {
   "name": "@chakrajs/plugin-interface",
   "version": "0.1.0",
-  "main": "dist/plugin-interface.js",
+  "main": "dist/plugin-interface.min.js",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",

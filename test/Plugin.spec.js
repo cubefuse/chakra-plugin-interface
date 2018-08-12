@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 'use strict'
-const Plugin = require('../dist/plugin-interface')
+const Plugin = require('../dist/plugin-interface.min')
 const MockPlugin = require('./mocks/MockPlugin')
 
 const chai = require('chai')
