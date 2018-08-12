@@ -1,0 +1,38 @@
+{
+  "name": "@chakrajs/plugin-interface",
+  "version": "0.1.0",
+  "main": "dist/plugin-interface.js",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^4.1.2",
+    "clean-documentation-theme": "^0.5.2",
+    "codecov": "^3.0.4",
+    "dirty-chai": "^2.0.1",
+    "documentation": "^8.1.0",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^12.0.2",
+    "pre-commit": "^1.2.2",
+    "rollup": "^0.64.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-uglify": "^4.0.0",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "mocha",
+    "coverage": "nyc --reporter=lcovonly mocha",
+    "coverage:publish": "nyc --reporter=lcovonly mocha && codecov",
+    "pretest": "npm run build",
+    "docs": "documentation build src/** --format html --theme node_modules/clean-documentation-theme --o docs"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "files": [
+    "dist"
+  ]
+}

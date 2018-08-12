@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+.idea
+*.log
+.nyc_coverage
+coverage
+test
+docs
