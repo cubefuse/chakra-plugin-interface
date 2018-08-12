@@ -24,13 +24,16 @@
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "test": "mocha",
+    "lint": "standard",
     "coverage": "nyc --reporter=lcovonly mocha",
     "coverage:publish": "nyc --reporter=lcovonly mocha && codecov",
     "pretest": "npm run build",
     "docs": "documentation build src/** --format html --theme node_modules/clean-documentation-theme --o docs"
   },
   "pre-commit": [
-    "test"
+    "lint",
+    "test",
+    "docs"
   ],
   "files": [
     "dist"

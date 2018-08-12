@@ -1,0 +1,25 @@
+language: node_js
+node_js: "lts/*"
+cache: yarn
+stages:
+- build
+- lint
+- test
+- docs
+script: skip
+jobs:
+  include:
+  - stage: build
+    name: "Build"
+    script: yarn build
+  - stage: lint
+    name: "Lint"
+    script: yarn lint
+  - stage: test
+    name: "Test"
+    script: yarn test
+  - stage: docs
+    name: "Coverage"
+    script: yarn coverage:publish
+  - script: yarn docs
+    name: "API Docs"
